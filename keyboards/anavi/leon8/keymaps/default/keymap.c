@@ -14,13 +14,13 @@ const uint8_t RGBLED_RAINBOW_SWIRL_INTERVALS[] PROGMEM = {20, 10, 4};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_MAIN] = LAYOUT(
-     RGB_TOG, RGB_SAI, RGB_HUI, RGB_VAI,
-     RGB_MOD, RGB_SAD, RGB_HUD, RGB_VAD
+     MO(_FN), RGB_SAI, RGB_HUI, RGB_VAI,
+     RGB_MOD, BL_TOGG, BL_STEP, BL_BRTG
   ),
 
   [_FN] = LAYOUT(
-     KC_F,    _______, RGB_HUI, _______,
-     RGB_TOG, RGB_MOD, RGB_HUD, _______
+     _______, RGB_SAI, RGB_HUI, RGB_VAI,
+     RGB_TOG, RGB_SAD, RGB_HUD, RGB_VAD
   )
 };
 
