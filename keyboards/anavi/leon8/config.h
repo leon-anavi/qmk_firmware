@@ -55,10 +55,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define UNUSED_PINS
 
-/* ws2812 RGB LED */
+/* ws2812B RGB LED */
 #define RGB_DI_PIN F4
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 8    // Number of LEDs
-#define RGBLIGHT_HUE_STEP 5    // How much each press of rgb_hue changes hue
-#define RGBLIGHT_SAT_STEP 10   // How much each press of rgb_sat changes sat
+#define RGBLED_NUM 8
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 10
+#define RGBLIGHT_LIMIT_VAL 255
+
+#ifdef OLED_DRIVER_ENABLE
+#    define OLED_DISPLAY_128X64
+#    define OLED_DISABLE_TIMEOUT
+#    define OLED_FONT_H "keyboards/crkbd/keymaps/drashna/glcdfont.c"
+#endif
