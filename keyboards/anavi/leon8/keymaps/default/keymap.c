@@ -31,7 +31,7 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 
 void oled_task_user(void) {
   // Host Keyboard Layer Status
-  oled_write_ln_P(PSTR("Mini Keyboard"), false);
+  oled_write_ln_P(PSTR("AANVI Macro Pad 8"), false);
   oled_write_P(PSTR("Active layer:"), false);
 
   switch (get_highest_layer(layer_state)) {

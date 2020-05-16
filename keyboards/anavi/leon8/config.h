@@ -45,8 +45,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MATRIX_ROW_PINS { D0, D5 }
 // #define MATRIX_COL_PINS { F1, F0, B0 }
 #define DIRECT_PINS {   \
-    { D4, C6, E6, B4 }, \
-    { B5, F7, F6, F5 } \
+    { D4, F6, B5, E6 }, \
+    { F5, F7, B4, C6 } \
 }
 
 #define BACKLIGHT_PIN D7
