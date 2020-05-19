@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xCEEB
-#define PRODUCT_ID      0x0007
+#define PRODUCT_ID      0x0001
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    ANAVI
-#define PRODUCT         Leon8
-#define DESCRIPTION     8 key microswitch board
+#define PRODUCT         ANAVI Macro Pad 8
+#define DESCRIPTION     8-key mechanical keyboard/keypad/macropad with backlit, mini OLED display and RGB LED strip
 
 /* key matrix size */
 #define MATRIX_ROWS 2
